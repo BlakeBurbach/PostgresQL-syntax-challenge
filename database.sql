@@ -1,5 +1,5 @@
 1. Get all users from Chicago.
-
+SELECT "username" FROM "accounts" WHERE "city" LIKE 'chicago';
 
 2. Get all users with usernames that contain the letter a.
 
