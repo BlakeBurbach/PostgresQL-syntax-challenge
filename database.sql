@@ -22,10 +22,13 @@ WHERE "account_balance" < 355.80
 ORDER BY "account_balance" ASC;
 
 7. Get all users with account balances that are more than $100.
+SELECT * FROM "accounts" WHERE "account_balance" > 100;
 
 
 8. Add a new record.
-
+INSERT INTO "accounts" ("username", "city", "transactions_completed",
+"transactions_attempted", "account_balance")
+VALUES ('lia', 'saint paul', 7, 10, 3000.45);
 
 9. The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: Delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
 
