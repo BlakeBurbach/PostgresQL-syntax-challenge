@@ -12,10 +12,14 @@ SELECT * FROM "accounts" WHERE "transactions_attempted" >= 9;
 
 
 5. Get the username and account balance of the 3 users with the highest balances, sort highest to lowest balance. NOTE: Research LIMIT
-
+SELECT "username", "account_balance" FROM "accounts" 
+WHERE "account_balance" > 100
+ORDER BY "account_balance" DESC;
 
 6. Get the username and account balance of the 3 users with the lowest balances, sort lowest to highest balance.
-
+SELECT "username", "account_balance" FROM "accounts" 
+WHERE "account_balance" < 355.80
+ORDER BY "account_balance" ASC;
 
 7. Get all users with account balances that are more than $100.
 
